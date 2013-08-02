@@ -67,7 +67,7 @@ public class QueueTest{
 		queue.add(_ANY_NUMBER_1);
 		queue.add(_ANY_NUMBER_1);
 		queue.add(_ANY_NUMBER_1);
-		assertEquals(5, queue.getSize());
+	
 	}
 	
 	@Test(expected = QueueEmptyException.class)
@@ -87,14 +87,6 @@ public class QueueTest{
 		queue.add(_ANY_NUMBER_2);
 		queue.add(_ANY_NUMBER_1);
 		assertEquals(_ANY_NUMBER_2,queue.peek());
-	}
-	
-	@Test
-	public void whenThreeIntsAreAddedAndPeekValueOfFirstIntIsReturned()throws QueueFullException, QueueEmptyException, InvalidException {
-		queue.add(_ANY_NUMBER_3);
-		queue.add(_ANY_NUMBER_2);
-		queue.add(_ANY_NUMBER_1);
-		assertEquals(_ANY_NUMBER_3,queue.peek());
 	}
 		
 	@Test
