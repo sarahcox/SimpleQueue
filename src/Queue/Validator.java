@@ -10,10 +10,14 @@ public class Validator {
 	}
 
 	public Boolean validate(int numberToValidate) throws InvalidException {
-		if (numberToValidate <= lowerLimit || numberToValidate >= upperLimit)
+		if(!isValid(numberToValidate))
 			throw new InvalidException();
 		return true;
+	}
 
+	private boolean isValid(int numberToValidate) {
+		return numberToValidate > lowerLimit && numberToValidate < upperLimit;
 	}
 
 }
+

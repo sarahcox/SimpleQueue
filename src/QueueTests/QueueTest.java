@@ -71,7 +71,7 @@ public class QueueTest{
 	}
 	
 	@Test(expected = QueueEmptyException.class)
-	public void whenRemoveIsCalledAndTheListIsEmptyAreAddedQueueEmptyExceptionIsThrown() throws QueueEmptyException, InvalidException{
+	public void whenRemoveIsCalledAndTheQueueIsEmptyQueueEmptyExceptionIsThrown() throws QueueEmptyException, InvalidException{
 		queue.remove();
 	
 	}
