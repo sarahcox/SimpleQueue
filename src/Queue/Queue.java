@@ -17,8 +17,8 @@ public class Queue {
 
 	public void add(int numberToAdd) throws QueueFullException, InvalidException{
 		checkQueueSizeIsNotGreaterThanOrEqualToFive();
-		if (validator.validate(numberToAdd))
-			queueList.add(numberToAdd);
+		validator.validate(numberToAdd);
+		queueList.add(numberToAdd);
 	}
 
 	private void checkQueueSizeIsNotGreaterThanOrEqualToFive()
