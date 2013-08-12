@@ -8,7 +8,7 @@ import org.junit.Test;
 import Queue.InvalidException;
 import Queue.Validator;
 
-public class ValidatorTests {
+public class ValidatorTest {
 
 	Validator validator;
 	private int lowerBoundary = 0;
